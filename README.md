@@ -64,7 +64,7 @@ Let's make a minimal theme:
 
 ```javascript
 // the start() shortcuts returns an instance of PrettyError ...
-pe = require('pretty-error').start();
+var pe = require('pretty-error').start();
 
 // ... which we can then use to customize with css declarations:
 pe.appendStyle({
@@ -148,8 +148,9 @@ Here is how the minimal theme will look depending on your terminal color setting
 You can also inject a theme like this...
 
 ```javascript
-// var theme = require('./path/to/theme.js')
-// pe.appendStyle(theme)
+var pe = require('pretty-error').start();
+var theme = require('./path/to/theme.js');
+pe.appendStyle(theme);
 ```
 
 ## Customization
