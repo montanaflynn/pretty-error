@@ -1,8 +1,8 @@
-# PrettyError
-
 [![Dependency status](https://david-dm.org/AriaMinaei/pretty-error.svg)](https://david-dm.org/AriaMinaei/pretty-error)
 [![devDependency Status](https://david-dm.org/AriaMinaei/pretty-error/dev-status.svg)](https://david-dm.org/AriaMinaei/pretty-error#info=devDependencies)
 [![Build Status](https://secure.travis-ci.org/AriaMinaei/pretty-error.svg?branch=master)](https://travis-ci.org/AriaMinaei/pretty-error)
+
+# PrettyError
 
 A small tool to see node.js errors with less clutter:
 
