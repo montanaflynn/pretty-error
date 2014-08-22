@@ -3,8 +3,7 @@
 [![Dependency status](https://david-dm.org/AriaMinaei/pretty-error.svg)](https://david-dm.org/AriaMinaei/pretty-error)
 [![devDependency Status](https://david-dm.org/AriaMinaei/pretty-error/dev-status.svg)](https://david-dm.org/AriaMinaei/pretty-error#info=devDependencies)
 [![Build Status](https://secure.travis-ci.org/AriaMinaei/pretty-error.svg?branch=master)](https://travis-ci.org/AriaMinaei/pretty-error)
-
-[![NPM](https://nodei.co/npm/pretty-error.svg)](https://npmjs.org/package/pretty-error)
+[![NPM](https://nodei.co/npm/pretty-error.png)](https://npmjs.org/package/pretty-error)
 
 A small tool to see node.js errors with less clutter:
 
@@ -64,16 +63,14 @@ PrettyError turns error objects into something similar to an html document, and 
 
 ## Theming
 
-PrettyError's default theme is a bunch of simple css-like declarations. [Here](https://github.com/AriaMinaei/pretty-error/blob/master/scripts/coffee/lib/prettyError/defaultStyle.coffee) is the source of the default theme.
-
-Surely, you can change all aspects of this theme. Let's do a minimal one:
+Since the [default theme](https://github.com/AriaMinaei/pretty-error/blob/master/lib/default-style.js) is a bunch of simple css-like declarations you can easily modify it. Let's do a minimal theme:
 
 ```javascript
 // the start() shortcuts returns an instance of PrettyError ...
 pe = require('pretty-error').start();
 
 // ... which we can then use to customize with css declarations:
-pe.adppendStyle({
+pe.appendStyle({
    // this is a simple selector to the element that says 'Error'
    'pretty-error > header > title > kind': {
       // which we can hide:
@@ -147,9 +144,9 @@ pe.adppendStyle({
 });
 ```
 
-Here is how our minimal theme will look like: ![screenshot of our custom theme](https://github.com/AriaMinaei/pretty-error/raw/master/docs/images/custom-theme-screenshot.png)
+Here is how our minimal theme will look like (varies on your terminal color settings): ![screenshot of our custom theme](https://github.com/AriaMinaei/pretty-error/raw/master/docs/images/custom-theme-screenshot.png)
 
-I'll post more examples on [RenderKid](https://github.com/AriaMinaei/renderkid) when it comes out of beta.
+User contributed themes are available in the [themes directory](https://github.com/AriaMinaei/pretty-error/tree/master/themes).
 
 ## Customization
 
