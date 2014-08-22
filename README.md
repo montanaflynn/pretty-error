@@ -58,7 +58,7 @@ PrettyError turns error objects into something similar to an html document, and 
 
 ## Theming
 
-Since the [default theme](https://github.com/AriaMinaei/pretty-error/blob/master/lib/default-style.js) is a bunch of simple css-like declarations you can easily modify it. 
+Since the [default theme](https://github.com/AriaMinaei/pretty-error/blob/master/lib/default-style.js) it is easily modifiable. User contributed themes are available in the [themes directory](https://github.com/AriaMinaei/pretty-error/tree/master/themes).
 
 Let's make a minimal theme:
 
@@ -141,9 +141,16 @@ pe.appendStyle({
 });
 ```
 
-Here is how our minimal theme will look like (varies on your terminal color settings): ![screenshot of our custom theme](https://github.com/AriaMinaei/pretty-error/raw/master/docs/images/custom-theme-screenshot.png)
+Here is how the minimal theme will look depending on your terminal color settings: 
 
-User contributed themes are available in the [themes directory](https://github.com/AriaMinaei/pretty-error/tree/master/themes).
+![screenshot of our custom theme](https://github.com/AriaMinaei/pretty-error/raw/master/docs/images/custom-theme-screenshot.png)
+
+You can also inject a theme like this...
+
+```javascript
+// var theme = require('./path/to/theme.js')
+// pe.appendStyle(theme)
+```
 
 ## Customization
 
