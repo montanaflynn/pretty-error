@@ -3,7 +3,6 @@
 [![Dependency status](https://david-dm.org/AriaMinaei/pretty-error.svg)](https://david-dm.org/AriaMinaei/pretty-error)
 [![devDependency Status](https://david-dm.org/AriaMinaei/pretty-error/dev-status.svg)](https://david-dm.org/AriaMinaei/pretty-error#info=devDependencies)
 [![Build Status](https://secure.travis-ci.org/AriaMinaei/pretty-error.svg?branch=master)](https://travis-ci.org/AriaMinaei/pretty-error)
-[![NPM](https://nodei.co/npm/pretty-error.png)](https://npmjs.org/package/pretty-error)
 
 A small tool to see node.js errors with less clutter:
 
@@ -63,7 +62,9 @@ PrettyError turns error objects into something similar to an html document, and 
 
 ## Theming
 
-Since the [default theme](https://github.com/AriaMinaei/pretty-error/blob/master/lib/default-style.js) is a bunch of simple css-like declarations you can easily modify it. Let's do a minimal theme:
+Since the [default theme](https://github.com/AriaMinaei/pretty-error/blob/master/lib/default-style.js) is a bunch of simple css-like declarations you can easily modify it. 
+
+Let's make a minimal theme:
 
 ```javascript
 // the start() shortcuts returns an instance of PrettyError ...
@@ -293,6 +294,9 @@ pe.skipPackage('express'); // this will skip all the trace lines about express` 
 ## State of the project
 
 This project has been out there for a while and used by fellow devs, but I still consider it a work in progress. Please let me know if something isn't working, or if you have any suggestions. And pull requests are of course, very welcome!
+
+[![NPM](https://nodei.co/npm/pretty-error.png)](https://npmjs.org/package/pretty-error)
+
 
 #### P.S.
 
